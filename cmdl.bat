@@ -1,5 +1,51 @@
 @echo off
 title Theme Settings
+
+setlocal
+
+for /f "tokens=4-5 delims=[.] " %%i in ('ver') do set "version=%%i.%%j"
+
+
+if "%version%"=="10.0" (
+    echo Detected Windows 10/11
+    echo Your computer will run cmdl correctly if you have Windows 10.
+	echo You may also however have Windows 11, which means you need to use this software with caution.
+	echo This is because cmdl has compatibility issues with Windows 11.
+    pause
+	CLS
+	goto start
+) else if "%version%"=="6.3" (
+    echo Detected Windows 8.1.
+    echo Your computer will run cmdl correctly.
+	pause
+	CLS
+	goto start
+) else if "%version%"=="6.2" (
+    echo Detected Windows 8.
+    echo Your computer will run cmdl correctly.
+	pause
+	CLS
+	goto start
+) else if "%version%"=="6.1" (
+    echo Detected Windows 7.
+    echo Your computer will run cmdl correctly.
+	pause
+	CLS
+	goto start
+) else if "%version%"=="6.0" (
+    echo Detected Windows Vista.
+    echo Your computer will run cmdl correctly.
+	pause
+	CLS
+	goto start
+) else (
+    echo Detected operating system is not Windows 11, 10, 8.1, 8, 7, or Vista.
+    echo Your computer will run cmdl correctly.
+	pause
+	CLS
+	goto start
+)
+
 :start
 echo Select a theme
 echo Make sure to use the app in windowed mode, as not doing so may cause problems.
@@ -19,7 +65,6 @@ echo B. Calipso (Calibrato's Theme)
 echo C. Pink Blooming Flower
 echo D. Light Theme
 echo E. Exit
-echo F. About, Changelog, FAQ
 echo. 
 set choice=
 set /p choice=Type the number to select your preffered theme.
@@ -43,8 +88,6 @@ if '%choice%'=='d' goto lt
 if '%choice%'=='D' goto lt
 if '%choice%'=='e' goto exit
 if '%choice%'=='E' goto exit
-if '%choice%'=='f' goto mp
-if '%choice%'=='F' goto mp
 echo.
 :BaW
 CLS
@@ -115,6 +158,3 @@ CMD
 CLS
 echo Continuing will close the program.
 pause
-:mp
-start mp
-exit
