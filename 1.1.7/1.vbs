@@ -1,0 +1,1 @@
+MsgBox "The app you just launched has been discontinued, so any errors or bugs will not be fixed (unless serious). If you have a serious issue to report, send a message to @c4urpt on discord and expect a response.",200768,"Information"
