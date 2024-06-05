@@ -1,3 +1,0 @@
-Launch cmdl.bat with administrative access by right clicking.
-
-Use cmdl in windowed mode to avoid possible graphical errors.
