@@ -1,0 +1,7 @@
+
+ Changelog:
+
+ v1.2.0
+
+ Fixed the bug that when "exit" is typed into the command prompt, it switches to the next theme (it now exits CMD and goes to the main menu)
+ Added 4 new themes (Menu Theme, Lemon Theme, Crystal Theme and Night Theme)
