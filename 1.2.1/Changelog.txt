@@ -1,0 +1,7 @@
+
+ Changelog:
+
+ v1.2.1
+
+ Fixed a small bug that occured when the Pink Blooming Flower theme was selected lowercase.
+ Better styling
