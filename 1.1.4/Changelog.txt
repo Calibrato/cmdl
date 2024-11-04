@@ -27,5 +27,3 @@
 
  No. (unless you don't launch it administrator mode, not doing so may restrict features.)
 
-
- Report any bugs to @c4urpt on Discord
